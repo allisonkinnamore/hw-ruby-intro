@@ -3,20 +3,12 @@
 # Part 1
 
 def sum arr
-  # arr.sum
   result = 0
   arr.each {|x| result += x}
   result
 end
 
 def max_2_sum arr
-  #result = 0
-  #if arr.length == 1
-  #  result =  arr[0]
-  #elsif arr.length == 1
-  #  arr.sort!
-  #  result =  arr[-1] + arr[-2]
-  # sum(arr.sort.last(2))
   sum(arr.max(2))
 end
 
@@ -36,11 +28,7 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  #if /^[01]+$/.match?(s)
-  #else
-  #  false
-  #end
-/^(0|00|([01]+00))$/.match?(s)
+  /^(0|00|([01]+00))$/.match?(s)
 end
 
 
